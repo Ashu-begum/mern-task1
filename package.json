@@ -1,0 +1,16 @@
+{
+  "name": "mern-task1-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MERN Stack Internship Task 1 - React frontend with Express and MongoDB API",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm start --prefix client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
